@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>enteakshaya-QR Attendance System</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5-qrcode/2.3.4/html5-qrcode.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>enteakshaya - Attendance System</h1>
+        
+        <!-- Initial Scanner Button -->
+        <div id="scanner-container">
+            <button id="scan-button" class="primary-button">Scan QR Code</button>
+            <div id="qr-reader" style="display: none;"></div>
+        </div>
+
+        <!-- Employee Details Section (Initially Hidden) -->
+        <div id="employee-details" class="hidden">
+            <div class="profile-section">
+                <div class="employee-info">
+                    <h2 id="employee-name"></h2>
+                    <p><strong>ID:</strong> <span id="employee-id"></span></p>
+                    <p><strong>Department:</strong> <span id="employee-department"></span></p>
+                    <p><strong>Email:</strong> <span id="employee-email"></span></p>
+                    <p><strong>Phone:</strong> <span id="employee-phone"></span></p>
+                </div>
+            </div>
+
+            <div class="attendance-actions">
+                <button id="check-in" class="action-button">Check In</button>
+                <button id="check-out" class="action-button">Check Out</button>
+            </div>
+
+            <div class="work-info">
+                <p>Check-in Time: <span id="check-in-time">-</span></p>
+                <p>Check-out Time: <span id="check-out-time">-</span></p>
+                <p>Total Hours: <span id="total-hours">-</span></p>
+            </div>
+        </div>
+
+        <!-- Status Messages -->
+        <div id="status-message" class="hidden"></div>
+    </div>
+    <script src="/js/script.js"></script>
+</body>
+</html>
