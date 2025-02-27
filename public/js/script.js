@@ -4,7 +4,7 @@ class AttendanceSystem {
         this.currentEmployeeId = null;
         this.userLocation = null;
         this.allowedLocations = {
-            "ECS OFFICE": { lat: 11.235443818092909, lng: 76.05030729511002 }
+            "ECS OFFICE": { lat: 11.0231552, lng: 75.9595008 }
         };
         this.initializeElements();
         this.attachEventListeners();

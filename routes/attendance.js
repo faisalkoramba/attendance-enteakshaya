@@ -129,7 +129,7 @@ router.post('/record-attendance', async (req, res) => {
     try {
         const { employeeId, action, timestamp, location } = req.body;
         const allowedLocations = req.app.locals.allowedLocations || {
-            "ECS OFFICE": { lat: 11.235443818092909, lng: 76.05030729511002 }
+            "ECS OFFICE": { lat: 11.0231552, lng: 75.9595008 }
         };
 
         console.log("Allowed locations:", JSON.stringify(allowedLocations, null, 2));
